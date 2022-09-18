@@ -1,0 +1,291 @@
+*{ margin: 0%;
+   box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+section{
+    width: 100%;
+    float: left;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+h1{
+    padding: 50px;
+    align-items: center;
+    font-size: xx-large;
+    color: green;
+}
+h3{
+    margin: 20px;
+    padding: 20px;
+    font-size: large;
+    color: green;
+}
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:white;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.p1{
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .column {
+        width: 100%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.slideshow{
+	width: 800px;
+	height: 500px;
+	overflow: hidden;
+}
+.middle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.navigation{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.bar{
+	width: 50px;
+	height: 10px;
+	border: 2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+	
+}
+.bar:hover{
+	background: #4caf50;
+}
+
+input[name="r"]{
+	position: absolute;
+	visibility: hidden;
+}
+.slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+	
+}
+.slide{
+	width: 20%;
+	transition: 0.4s;
+	
+}
+.slide img{
+	width: 100%;
+	height: 100%;
+
+	
+}
+#r1:checked ~ .s1{
+margin-left: 0;
+}
+#r2:checked ~ .s1{
+margin-left: -20%;
+}
+#r3:checked ~ .s1{
+margin-left: -40%;
+}
+#r4:checked ~ .s1{
+margin-left: -60%;
+}
+#r5:checked ~ .s1{
+margin-left: -80%;
+}
+
+/* Contact css */
+.team-section{
+	
+	text-align: center;
+	
+}
+.inner-width{
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
+	color: FFFFFFF;
+	overflow: hidden;
+	
+}
+.team-section h1{
+	text-transform: uppercase;
+	display: inline-block;
+	
+	
+	font-size: 20px;
+	
+	
+}
+.border{
+	width: 120px;
+	height: 3px;
+	background: #4caf50;
+	margin: 20px auto;
+
+}
+
+.pe{
+	float: left;
+	width: calc(100% /3);
+	overflow: hidden;
+	padding: 40px 0;
+	transition: 0.4s;
+    align-items: center;
+}
+.pe:hover{
+	background: lavender;
+}
+.pe img{
+	width: 120px;
+	height: 120px;
+	
+	
+}
+.p-name {
+	margin: 16px 0;
+	text-transform: uppercase;
+}
+.p-des{
+	font-style: sans serif;
+	color: darkblue; 
+	
+	
+}
+.p-sm{
+	margin-top: 12px;
+	color: FFFFFF;
+   
+	
+}
+.p-sm a{
+	margin: 0 4px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	align-items: center;
+    transition: 0.4s;
+	color: FFFFFF;
+}
+.p-sm a:hover{
+	transform: scale(1.5);
+	color: FFFFFF;
+}
+.p-sm a i{
+	color: FFFFFF;
+	line-height: 30px;
+	
+	
+}
+@media screen and (max-width:600px){
+	.pe{
+		width:100%;
+	}
+}
+
+/* footer section */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin-top: 30px;
+}
+.totopbutton {
+    padding: 16px;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    margin-top: 8px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+.lightgrey{
+    color:#000!important;
+    background-color:#f1f1f1!important
+}
+
+
+
+
+
+
+
+
