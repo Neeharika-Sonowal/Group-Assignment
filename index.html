@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="deptstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    </head>
+    <body id="demo">
+        <div id="home">
+            <div class="header">
+                <h1 class="head1">Department Of Computer Science</h1>
+                <select name="theme-select" id="theme-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="green">Green</option>
+                    <option value="pink">Pink</option>
+                    
+                </select>  
+                <script>
+                    const setTheme = theme => document.documentElement.className = theme;
+ 
+                    document.getElementById('theme-select').addEventListener('change', function() {
+                    setTheme(this.value);
+                    });
+                </script> 
+            </div>
+            <!-- NAV bar -->
+                <div class="topnav" id="myTopnav">
+                        <a href="#home" class="active">Home</a>
+                        <a href="#course">Courses</a>
+                        <a href="#teachers">Teachers</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact Us</a>
+                        <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                <script>
+                    function navFunction() {
+                        var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } 
+                            else {
+                                x.className = "topnav";
+                            }
+                    }
+                    
+                </script>
+            </div>
+            <!--Dept Intro-->
+            <div class="row">
+            <div class="col">
+                <center><h1 class="head">Welcome To Our Department</h1></center>
+                <p class="p1">
+                    Place Type :	College & University, Government Organization, Campus Building<br>
+                    Address	:	Gauhati University, Gopinath Bordoloi Nagar, Jalukbari, Gauhati, Assam, India 781014<br>
+                    Coordinate	:	26.1574747423, 91.6669768095<br>
+                    Phone	:	913612571138<br>
+                    Email	:	<br>
+                    Social	:	facebook.com/704251376439985<br>
+                    
+                    Website	: <a href="https://gauhati.ac.in/academic/technology/computer-science">gauhati.ac.in/academic/technology/computer-science</a>
+                </p>
+            </div>
+            <div class="col">
+                <img src="Students.jpg" alt="Students of CS Dept" width="100%">
+            </div>
+            </div>
+        </div>    
+    <div class="testimonials" id="course">
+    <div class="inner">
+	<h1>Course Offered</h1>
+	<div class="border"></div>
+	<div class="about">
+        <p>
+        There are Two Courses </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                    <div class="testimonial">
+					
+					<div class="name">Msc. in Computer Science
+					</div>
+					 
+                        <p class="des">
+                
+                    <b>1st Sem CS:</b> <br>ADBMS,OS,ACOA,MFCS,OOP in UML <br>
+                    <b>2nd Sem CS:</b><br> DATA STRUCTRE, SOFTWARE ENGINEERING, ACT, COMPUTER GRAPHICS,DCCN <br>
+                    <b>3rd sem CS:</b><br> TOC, CD, DISTRIBUTED SYSTEM; ELECTIVE: DM/IP/WPT <br>         
+                    <b>4th sem CS:</b><br> Programming lanugage,PROJECT <br>
+                     </p>
+	
+                       
+                    </div>
+					</div>
+ 
+                    <div class="col">
+                    <div class="testimonial">
+					
+					<div class="name"> Msc. in Information Technology
+					</div>
+					
+                          <p class="des">
+                         
+                    <b>1st Sem IT:</b><br> ADBMS,OS,ACOA,MFCS,OOP in UML<br>
+                    <b>2nd Sem IT:</b><br> DATA STRUCTRE, SOFTWARE ENGINEERING, ACT, COMPUTER GRAPHICS,DCCN <br>
+                    <b>3rd sem IT:</b><br>CORE: WPT, CD, DISTRIBUTED SYSTEM; ELECTIVE: IP/DM <br>         
+                    <b>4th sem IT:</b><br> Programming lanugage,PROJECT <br>
+                
+                    </p>
+
+                       
+                    </div>
+					</div>
+            </div>
+    </div>
+    </div>
+
+    <!--teachers-->
+    <div id="teachers">
+        <div class="teach-section">
+            <h2 class="head"> Teaching Faculty </h2>
+            <div class="border"></div>
+            <div class="pers">
+            
+            <div class="pe">
+            <img src="teach.png" alt=" pf img" class="profile-img">
+            <div class="p-name"> Prof. Anjana Kakoti Mahanta </div>
+            <div class="p-des"><b>Head Of Department</b><br>MSc (Gauhati) PhD (Gauhati)
+            </div>                  
+            </div>
+            
+            <div class="pe">
+            <img src="teach.png" alt=" pf img" class="profile-img">
+            <div class="p-name">Dr. Sanjib Kumar Kalita </div>
+            <div class="p-des"> MCA (Gauhati) PhD (Gauhati)<br> 
+            </div>
+            </div>
+                        
+            <div class="pe">
+            <img src="teach.png" alt=" pf img" class="profile-img">
+            <div class="p-name">Mr Hasin A Ahmed</div>
+            <div class="p-des"> MCA (Tezpur) PhD (Tezpur) <br>
+            </div>   
+            </div>
+            </div> 
+        </div>  
+    </div>
+					
+    <div id="gallery">
+        <div class="heading">
+            <b>Gallery</b>
+        </div>
+            <div class="gallery-image">
+            <div class="img-box">
+            <img src="Students2.jpg" alt="" />
+            <div class="transparent-box">
+            <div class="caption">
+            <p>Teachers Day</p>
+            <p class="opacity-low">Students of Department</p>
+            </div>
+            </div>
+            </div>
+            <div class="img-box">
+            <img src="Students3.jpeg" alt="" />
+            <div class="transparent-box">
+            <div class="caption">
+            <p>Birthday Celebration</p>
+            <p class="opacity-low">Msc 3rd Sem Students</p>
+            </div>
+            </div>
+            </div>
+            <div class="img-box">
+            <img src="Students4.jpeg" alt="" />
+            <div class="transparent-box">
+            <div class="caption">
+            <p>Freshers Cum Farewell</p>
+            <p class="opacity-low">Batch 2020,2021 and 2022</p>
+            </div>
+            </div>
+            </div>
+            <div class="img-box">
+            <img src="Students5.jpeg" alt="" />
+            <div class="transparent-box">
+            <div class="caption">
+            <p>Vishwakarma Puja</p>
+            <p class="opacity-low">CS & ECT Dept</p>
+            </div>
+            </div>
+            </div>
+            <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=344" alt="" />
+            <div class="transparent-box">
+            <div class="caption">
+            <p>caption1</p>
+            <p class="opacity-low">caption2</p>
+            </div>
+            </div>
+            </div>
+            <div class="img-box">
+            <img src="https://picsum.photos/350/250?image=494" alt="" />
+            <div class="transparent-box">
+            <div class="caption">
+            <p>caption1</p>
+            <p class="opacity-low">caption2</p>
+            </div>
+            </div>
+            </div>
+  
+            </div>
+        </div>
+        <div class="container" id="contact">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">x path,Bylane-0</div>
+              <div class="text-two">place,placeGhy-00</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91123456789</div>
+              <div class="text-two">+91123456789</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">xxx@gmail.com</div>
+              <div class="text-two">yyy@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>For queries message here:</p>
+          <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Enter your Name">
+              </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+                <input type="text" placeholder="Enter your message">
+            </div>
+              
+            
+            <div class="button">
+              <input type="button" value="Send Now" >
+            </div>
+        </div>
+          </form>
+        </div>
+        </div>
+      </div>
+	  </div>
+<br>
+<br>
+
+<div class="footer-basic">
+        <footer>
+            <div class="social">
+              <a href="https://instagram.com/raahieksafar?igshid=YmMyMTA2M2Y="><i class="icon ion-social-instagram"></i></a>
+              <a href="https://twitter.com/JenishBorah?t=IhEYaeyeIGjEsTrPSyvpDw&s=03"><i class="icon ion-social-twitter"></i></a>
+              <a href="https://www.facebook.com/TheMoodyMusafir/"><i class="icon ion-social-facebook"></i></a></div>
+              
+
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#home">Home</a></li>
+                <li class="list-inline-item"><a href="#course">Course</a></li>
+                <li class="list-inline-item"><a href="#teachers">Teaching Faculty</a></li>
+                <li class="list-inline-item"><a href="#gallery">Gallery</a></li>
+                <li class="list-inline-item"><a href="#contact">Contact Us</a></li>
+            </ul>
+            <p class="copyright">JenishBorah & NeeharikaSonowal © 2022</p>
+        </footer>
+    </div>
+            </body>
+</html>
