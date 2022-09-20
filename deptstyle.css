@@ -7,7 +7,8 @@
  --color-2:#607EAA;
  --color-3:#EAE3D2;
  --color-4:#F9F5EB;
- }
+ --font-familee:'Open Sans', sans-serif;
+}
 
  :root.dark {
  --color-1:#171717;
@@ -21,22 +22,34 @@
     --color-2:#3D8361;
     --color-3:#D6CDA4;
     --color-4:#EEF2E6;
+    --bg-url:url(greenheader.jpg);
  }
 
- :root.pink {
-    --color-1:#6155A6;
-    --color-2:#A685E2;
-    --color-3:#E4BAD4;
-    --color-4:#F6DFEB;
+ :root.brown {
+    --color-1:#472D2D;
+    --color-2:#553939;
+    --color-3:#F2D388;
+    --color-4:#FFFBE9;
+    --bg-url:url(brownheader.jpg);
+    --font-familee: 'Comic Neue', cursive;
+  }
+
+ :root.galaxy{
+  --color-1:#2E0249;
+  --color-2:#570A57;
+  --color-3:#E4BAD4;
+  --color-4:#F6DFEB;
+  --bg-url:url(galaxyheader.jpg);
+
  }
 
  
  body{
     margin: 0;
     background-color: var(--color-4);
-    background-image: var(--bg-url);
+    
     color: var(--color-1);
-    font-family: var(--font-family, "Open Sans", sans-serif);
+    font-family: var(--font-familee);
  }
  select {
     padding: 0.25rem 0.75rem;
@@ -45,6 +58,7 @@
     background-color: var(--color-1);
     color: var(--color-4);
     border-radius: 0.25rem;
+    border: 1px solid var(--color-4);
     }
   
  h1{
@@ -60,10 +74,9 @@
      color: var(--color-1);
  }
 
-p{
-     margin-left: 40px;
-}
+
 .p1{
+    margin: 40px;
     color:var(--color-1)
 }
 .column {
@@ -75,13 +88,17 @@ p{
 .header {
      margin: 0;
      background-color: var(--color-1);
+     background-image: var(--bg-url);
      padding: 20px;
      text-align: center;
  }
 .head1{
      color: var(--color-4);
  }
- 
+ .phead1{
+   margin: 0;
+   color:var(--color-4);
+ }
  .topnav {
      overflow: hidden;
      background-color:var(--color-4);
@@ -136,6 +153,7 @@ p{
  .footer-basic {
      padding:40px 0;
      background-color:var(--color-1);
+     background-image: var(--bg-url);
      color:var(--color-4);
      margin-top: 20px;
    }
@@ -736,11 +754,11 @@ p{
 }
 .pe{
 	float: left;
-	width: calc(100% /3);
+	width: calc(33.33%);
 	overflow: hidden;
 	padding: 40px 0;
 	transition: 0.4s;
-    align-items: center;
+  align-items: center;
 }
 .pe:hover{
 	background:var(--color-3);
