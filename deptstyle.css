@@ -74,6 +74,10 @@
      color: var(--color-1);
  }
 
+.font-change:active {
+	background-color: #0f0;
+	
+}
 
 .p1{
     margin: 40px;
